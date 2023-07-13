@@ -35,7 +35,7 @@
                 <ListBoxItem>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="BoxVariant" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Product" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Products" Margin="5,0,0,0" VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
@@ -88,14 +88,8 @@
                     Grid.Row="1" 
                     Margin="10,35,0,0"
                     CornerRadius="5">
-                <DataGrid ItemsSource="{Binding Products}" FontWeight="DemiBold" AutoGenerateColumns="False" Background="Gray">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Product ID" Binding="{Binding ProductID}" />
-                        <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" />
-                        <DataGridTextColumn Header="Qty" Binding="{Binding Quantity}" />
-                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
-                        <DataGridTextColumn Header="Discount" Binding="{Binding Discount}" />
-                    </DataGrid.Columns>
+                <DataGrid FontWeight="DemiBold" Name="dataGrid" AutoGenerateColumns="False" Background="Gray">
+                    
                 </DataGrid>
 
             </Border>
