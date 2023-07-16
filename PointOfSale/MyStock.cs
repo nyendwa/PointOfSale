@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace PointOfSale;
+﻿namespace PointOfSale;
 
 public partial class MyStock
 {
