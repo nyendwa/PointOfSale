@@ -13,197 +13,196 @@
         MinHeight="600" 
         MinWidth="1300"
         FontFamily="Times New Roman">
-    <Grid>
+  <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="1.5*"/>
-            
-        </Grid.ColumnDefinitions>
-        <StackPanel Background="#103C67">
-            <Grid Height="150"/>
-            <!--ListView is a control that displays a collection 
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="250"/>
+      <ColumnDefinition Width="2*"/>
+      <ColumnDefinition Width="1.5*"/>
+
+    </Grid.ColumnDefinitions>
+    <StackPanel Background="#103C67">
+      <Grid Height="150"/>
+      <!--ListView is a control that displays a collection 
             of items in a scrollable list. -->
-            <ListView>
-                <ListBoxItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="ViewDashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Dashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="BoxVariant" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Products" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="ViewDashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Dashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Account" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Users" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Settings" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Settings" Margin="5,0,0,0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListBoxItem>
-            </ListView>
-
+      <ListView>
+        <StackPanel Orientation="Horizontal">
+          <materialDesign:PackIcon Kind="ViewDashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
+          <TextBlock Text="Dashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
         </StackPanel>
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.7*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-            <StackPanel Margin="10">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="USER:" FontWeight="DemiBold"/>
-                    <TextBox Text="Login" Margin="2,-5,0,5" FontWeight="Light" Foreground="LightGray"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="CASHDRAWER TIME ACCESSED" Margin="0,0,0,5" FontWeight="DemiBold"/>
-                    <TextBlock Margin="5,0,0,0" Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{}{0:T}'}"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="CASHDRAWER ID:" FontWeight="DemiBold"/>
-                    <TextBlock Text="Till No. 05" Margin="2,0,0,5" FontWeight="Light" Foreground="Black"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="CUSTOMER No.:" FontWeight="DemiBold"/>
-                    <TextBlock Text="Receipt No. 147" Margin="2,0,0,5" FontWeight="Light" Foreground="Black"/>
-                </StackPanel>
-            </StackPanel>
-            <Border BorderBrush="Black" 
+        <StackPanel Orientation="Horizontal">
+          <materialDesign:PackIcon Kind="BoxVariant" Margin="5,0,0,0" VerticalAlignment="Center"/>
+          <TextBlock Text="Products" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <materialDesign:PackIcon Kind="ViewDashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
+          <TextBlock Text="Dashboard" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <materialDesign:PackIcon Kind="Account" Margin="5,0,0,0" VerticalAlignment="Center"/>
+          <TextBlock Text="Users" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <materialDesign:PackIcon Kind="Settings" Margin="5,0,0,0" VerticalAlignment="Center"/>
+          <TextBlock Text="Settings" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+      </ListView>
+
+    </StackPanel>
+    <Grid Grid.Column="1">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="0.7*"/>
+        <RowDefinition Height="3*"/>
+        <RowDefinition Height="1*"/>
+      </Grid.RowDefinitions>
+      <StackPanel Margin="10">
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="USER:" FontWeight="DemiBold"/>
+          <TextBox Text="Login" Margin="2,-5,0,5" FontWeight="Light" Foreground="LightGray"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="CASHDRAWER TIME ACCESSED" Margin="0,0,0,5" FontWeight="DemiBold"/>
+          <TextBlock Margin="5,0,0,0" Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{}{0:T}'}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="CASHDRAWER ID:" FontWeight="DemiBold"/>
+          <TextBlock Text="Till No. 05" Margin="2,0,0,5" FontWeight="Light" Foreground="Black"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="CUSTOMER No.:" FontWeight="DemiBold"/>
+          <TextBlock Text="Receipt No. 147" Margin="2,0,0,5" FontWeight="Light" Foreground="Black"/>
+        </StackPanel>
+      </StackPanel>
+      <Border BorderBrush="Black" 
                     BorderThickness="1" 
                     Grid.Row="1" 
                     Margin="10,35,0,0"
                     CornerRadius="5">
-                <DataGrid FontWeight="DemiBold" Name="dataGrid" AutoGenerateColumns="False" Background="Gray">
-                    
-                </DataGrid>
+        <DataGrid FontWeight="DemiBold" Name="dataGrid" AutoGenerateColumns="False" Background="Gray"
+                  CanUserDeleteRows="True" CanUserAddRows="True">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" />
+            <DataGridTextColumn Header="Product Id" Binding="{Binding ProductId}" />
+            <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" />
+            <DataGridTextColumn Header="Quantity" Binding="{Binding Qty}" />
+            <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
+            <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
+          </DataGrid.Columns>
+        </DataGrid>
 
-            </Border>
-            <Grid Grid.Row="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="2*"/>
-            </Grid.ColumnDefinitions>
-                <TextBox Margin="10" 
-                         materialDesign:HintAssist.Hint="Barcode" 
-                         Grid.Row="0" 
-                         Grid.Column="0"
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <TextBox Margin="10" 
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                         Grid.Row="0" 
-                         Grid.Column="1" 
-                         materialDesign:HintAssist.Hint="QTY"/>
-                <TextBox Margin="10" 
-                         Grid.Row="0" 
-                         Grid.Column="2" 
-                         materialDesign:HintAssist.Hint="Discount"
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                         />
-                <TextBox Margin="10" 
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                         Grid.Row="0" 
-                         Grid.Column="3" 
-                         materialDesign:HintAssist.Hint="Addition"/>
-                <Button Grid.Row="1" 
-                        Grid.Column="1" 
-                        Grid.ColumnSpan="3" 
-                        Margin="10"
-                        Width="auto"
-                        Height="auto"
-                        Content="Confirm Payment"/>
-            </Grid>
+      </Border>
+      <Grid Grid.Row="2">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="5*"/>
+          <ColumnDefinition Width="1*"/>
+          <ColumnDefinition Width="2*"/>
+          <ColumnDefinition Width="2*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Margin="10" 
+                 materialDesign:HintAssist.Hint="Barcode" 
+                 Grid.Row="0" 
+                 Grid.Column="0"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+        <TextBox Margin="10" 
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 Grid.Row="0" 
+                 Grid.Column="1" 
+                 materialDesign:HintAssist.Hint="QTY"/>
+        <TextBox Margin="10" 
+                 Grid.Row="0" 
+                 Grid.Column="2" 
+                 materialDesign:HintAssist.Hint="Discount"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 />
+        <TextBox Margin="10" 
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 Grid.Row="0" 
+                 Grid.Column="3" 
+                 materialDesign:HintAssist.Hint="Addition"/>
+        <Button Grid.Row="1" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="3" 
+                Margin="10"
+                Width="auto"
+                Height="auto"
+                Content="Confirm Payment"
+                Click="ConfirmPayment_Click"/>
+      </Grid>
+    </Grid>
+    <Grid Grid.Column="2">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1.5*"/>
+        <RowDefinition Height="3*"/>
+        <RowDefinition Height="3*"/>
+      </Grid.RowDefinitions>
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="$" FontSize="90" Margin="10" HorizontalAlignment="Left"/>
+        <TextBox FontSize="90" Height="100" Width="360" Margin="10,-10,0,0"/>
+      </StackPanel>
+      <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1" Margin="5,5,10,0" CornerRadius="5"/>
+      <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="5,5,10,0" CornerRadius="5">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Product ID:" Margin="10 0 10 0" VerticalAlignment="Center" />
+            <TextBox Text="{Binding SelectedProduct.Id}" Width="100" />
+          </StackPanel>
+
+          <Image Grid.Row="1" Width="200" Height="200" Source="{Binding SelectedProduct.ImagePath}" />
         </Grid>
-        <Grid Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1.5*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-            </Grid.RowDefinitions>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="$" FontSize="90" Margin="10" HorizontalAlignment="Left"/>
-                <TextBox FontSize="90" Height="100" Width="360" Margin="10,-10,0,0"/>
-            </StackPanel>
-            <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1" Margin="5,5,10,0" CornerRadius="5"/>
-            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="5,5,10,0" CornerRadius="5">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
+      </Border>
 
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Product ID:" Margin="10 0 10 0" VerticalAlignment="Center" />
-                        <TextBox Text="{Binding SelectedProduct.Id}" Width="100" />
-                    </StackPanel>
+      <Border Grid.Row="2" 
+              BorderBrush="Black" 
+              BorderThickness="1" 
+              Margin="5,5,10,5"
+              CornerRadius="5">
+        <Grid Grid.Row="2" Margin="10">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+          </Grid.ColumnDefinitions>
 
-                    <Image Grid.Row="1" Width="200" Height="200" Source="{Binding SelectedProduct.ImagePath}" />
-                </Grid>
-            </Border>
+          <Button Grid.Column="0" Grid.Row="0" Width="Auto" Height="Auto" Content="7" Margin="5"/>
+          <Button Grid.Column="1" Grid.Row="0" Width="Auto" Height="Auto" Content="8" Margin="5"/>
+          <Button Grid.Column="2" Grid.Row="0" Width="Auto" Height="Auto" Content="9" Margin="5"/>
 
-            <Border Grid.Row="2" 
-                    BorderBrush="Black" 
-                    BorderThickness="1" 
-                    Margin="5,5,10,5"
-                    CornerRadius="5">
-                <Grid Grid.Row="2" Margin="10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
+          <Button Grid.Column="0" Grid.Row="1" Width="Auto" Height="Auto" Content="4" Margin="5"/>
+          <Button Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Content="5" Margin="5"/>
+          <Button Grid.Column="2" Grid.Row="1" Width="Auto" Height="Auto" Content="6" Margin="5"/>
 
-                    <Button Grid.Column="0" Grid.Row="0" Width="Auto" Height="Auto" Content="7" Margin="5"/>
-                    <Button Grid.Column="1" Grid.Row="0" Width="Auto" Height="Auto" Content="8" Margin="5"/>
-                    <Button Grid.Column="2" Grid.Row="0" Width="Auto" Height="Auto" Content="9" Margin="5"/>
+          <Button Grid.Column="0" Grid.Row="2" Width="Auto" Height="Auto" Content="1" Margin="5"/>
+          <Button Grid.Column="1" Grid.Row="2" Width="Auto" Height="Auto" Content="2" Margin="5"/>
+          <Button Grid.Column="2" Grid.Row="2" Width="Auto" Height="Auto" Content="3" Margin="5"/>
 
-                    <Button Grid.Column="0" Grid.Row="1" Width="Auto" Height="Auto" Content="4" Margin="5"/>
-                    <Button Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Content="5" Margin="5"/>
-                    <Button Grid.Column="2" Grid.Row="1" Width="Auto" Height="Auto" Content="6" Margin="5"/>
+          <Button Grid.Column="0" Grid.Row="3" Width="Auto" Height="Auto" Content="CLEAR" Margin="5"/>
+          <Button Grid.Column="1" Grid.Row="3" Width="Auto" Height="Auto" Content="0" Margin="5"/>
+          <Button Grid.Column="2" Grid.Row="3" Width="Auto" Height="Auto" Content="." Margin="5"/>
 
-                    <Button Grid.Column="0" Grid.Row="2" Width="Auto" Height="Auto" Content="1" Margin="5"/>
-                    <Button Grid.Column="1" Grid.Row="2" Width="Auto" Height="Auto" Content="2" Margin="5"/>
-                    <Button Grid.Column="2" Grid.Row="2" Width="Auto" Height="Auto" Content="3" Margin="5"/>
-
-                    <Button Grid.Column="0" Grid.Row="3" Width="Auto" Height="Auto" Content="CLEAR" Margin="5"/>
-                    <Button Grid.Column="1" Grid.Row="3" Width="Auto" Height="Auto" Content="0" Margin="5"/>
-                    <Button Grid.Column="2" Grid.Row="3" Width="Auto" Height="Auto" Content="." Margin="5"/>
-
-                    <Button Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4" Width="Auto" Height="Auto" Content="ENTER" Margin="5"/>
-                    <Button Grid.Column="2" Grid.Row="4" Width="Auto" Height="Auto" Content="CANCEL" Margin="5" Style="{StaticResource MaterialDesignFlatButton}"/>
-                </Grid>
-
-            </Border>
-
+          <Button Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4" Width="Auto" Height="Auto" Content="ENTER" Margin="5"/>
+          <Button Grid.Column="2" Grid.Row="4" Width="Auto" Height="Auto" Content="CANCEL" Margin="5" Style="{StaticResource MaterialDesignFlatButton}"/>
         </Grid>
+
+      </Border>
 
     </Grid>
+
+  </Grid>
 </Window>
